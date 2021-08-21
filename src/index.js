@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { AppProvider } from './cocktails/context';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AppProvider>
+        <App />
+    </AppProvider>
+   
   </React.StrictMode>,
   document.getElementById('root')
 );
